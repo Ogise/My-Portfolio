@@ -1,0 +1,316 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    transition: 0.3s;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background: #00916E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('your-image.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.btn {
+    background: #00916E;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #006F54;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+/* Testimonials */
+.testimonials, .latest-news, .newsletter {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.testimonial, .news-item {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter */
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background: #00916E;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sticky Footer */
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* Ensure the body takes at least full height */
+html, body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100vh; /* Ensures the content pushes the footer down */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Allows the content to expand while keeping the footer at the bottom */
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background: #006F54;
+}
+
+#dark-mode-toggle {
+    background: #80FFEC;
+    color: #333;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.dark-mode #dark-mode-toggle {
+    background: #E84855;
+    color: white;
+}
+
+/* Section Styling */
+section, .intro, .about, .contact, .project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Page */
+h2 {
+    color: #E84855;
+    border-bottom: 2px solid #3185FC;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 5px 0; /* Adds spacing for better readability */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #00916E;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project {
+    width: 300px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #00916E;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.project a:hover {
+    background: #006F54;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #3185FC;
+    outline: none;
+}
+
+button, .btn {
+    background: #3185FC;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover, .btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
